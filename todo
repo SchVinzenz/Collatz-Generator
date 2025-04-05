@@ -1,0 +1,13 @@
+ToDo:
+#Für die Analyse:
+- Abspeichern:
+  - in Datenbank (PostgreSQL) speichern
+  - Teiler abspeichern (ist durch 1, 2, 3, 4, ...) teilbar
+  - Zahlenfolge abspeichern? (mit welcher Datenbankstruktur)
+  - Länge abspeichern (also z.B. Wiederholung ist nach 133 Schritten erreicht)
+
+    -> ins Verhältnis setzten
+
+- Visualisierung:
+  - Analyse der Zusammenhänge (evtl.)
+  - mit seperaten Programm
