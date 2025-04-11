@@ -1,69 +1,69 @@
 # Collatz-Generator 🚀
-Ein interaktives Python-Programm zur Erforschung der Collatz-Vermutung. Das Tool ermöglicht es dir, Collatz-Sequenzen zu analysieren, zu simulieren und mit symbolischen Methoden (mithilfe von sympy) zu experimentieren. Es bietet eine intuitive grafische Benutzeroberfläche. 🎨
+An interactive Python program for exploring the Collatz conjecture. This tool allows you to analyze, simulate, and experiment with Collatz sequences using symbolic methods (via sympy). It features an intuitive graphical user interface. 🎨
 
-## Überblick 🌟
+## Overview 🌟
 
-Das Collatz-Tool erlaubt dir:
-- **Analyse:** Generiere und visualisiere die Collatz-Sequenz für einen gewählten Startwert. Das interaktive Fenster unterstützt Zoom- und Schwenkfunktionen. 🔍
-- **Simulation:** Zeige die Collatz-Sequenz als Text in einem Dialogfenster an. 📝
-- **Beweis:** Führe einen einfachen Hypothesentest durch (z. B. Überprüfung, ob n == 1) und präsentiere die Sequenz in einem speziellen Ergebnisfenster. ✅
-- **Alternative Ansätze:** Nutze sympy, um einen symbolischen Ausdruck der Collatz-Abbildung darzustellen (experimentell und kein vollständiger Beweis). 🧪
-- **Einstellungen:** Passe die Sprache der Benutzeroberfläche an (basierend auf einer Auswahl der 10 meistgesprochenen Sprachen weltweit), wähle eine Hintergrundfarbe und ändere die Schriftgröße. 🌈
+The Collatz tool enables you to:
+- **Analysis:** Generate and visualize the Collatz sequence for a chosen starting value. The interactive window supports zoom and pan functions. 🔍
+- **Simulation:** Display the Collatz sequence as text in a dialog window. 📝
+- **Proof:** Perform a simple hypothesis test (e.g., checking if n == 1) and present the sequence in a dedicated results window. ✅
+- **Alternative Approaches:** Use sympy to represent a symbolic expression of the Collatz mapping (experimental and not a complete proof). 🧪
+- **Settings:** Adjust the user interface language (based on a selection of the 10 most spoken languages worldwide), choose a background color, and change the font size. 🌈
 
-## Systemanforderungen 🖥️
+## System Requirements 🖥️
 
-- Python 3.6 oder höher
-- Abhängigkeiten:
-  - `tkinter` (normalerweise in Python enthalten; muss auf einigen Systemen installiert werden)
+- Python 3.6 or higher
+- Dependencies:
+  - `tkinter` (usually included with Python; may need to be installed on some systems)
   - `matplotlib`
   - `sympy`
-  - Weitere Standardpakete (wie `threading`)
+  - Other standard packages (like `threading`)
 
-## Installation und Nutzung 📥
+## Installation and Usage 📥
 
-1. **Repository klonen** oder den Projektordner herunterladen.
-2. **Abhängigkeiten installieren:**  
-   Führe aus:
+1. **Clone the repository** or download the project folder.
+2. **Install dependencies:**  
+   Run:
    ```bash
    pip install matplotlib sympy
    ```
-3. **Programm ausführen:**  
-   Navigiere im Terminal zum Projektordner und führe aus:
+3. **Run the program:**  
+   Navigate to the project folder in the terminal and run:
    ```bash
    python3 src/main.py
    ```
-   Die GUI öffnet sich mit Optionen für Analyse, Simulation, Beweis und Beenden. 🖱️
-4. **Einstellungen anpassen:**  
-   Nutze das Zahnrad-Symbol unten links, um das Einstellungsfenster zu öffnen und Sprache, Farbe und Schriftgröße zu ändern. Das Fragezeichen-Symbol unten rechts zeigt den alternativen symbolischen Beweisansatz an. ⚙️❓
+   The GUI will open with options for analysis, simulation, proof, and exit. 🖱️
+4. **Adjust settings:**  
+   Use the gear icon in the bottom left to open the settings window and change language, color, and font size. The question mark icon in the bottom right shows the alternative symbolic proof approach. ⚙️❓
 
-## Verpackung als macOS-App 🍎
+## Packaging as a macOS App 🍎
 
-Um das Programm als native macOS-Anwendung (.app) zu verpacken, kannst du [py2app](https://py2app.readthedocs.io/) verwenden:
-1. Installiere `py2app`:
+To package the program as a native macOS application (.app), you can use [py2app](https://py2app.readthedocs.io/):
+1. Install `py2app`:
    ```bash
    pip install py2app
    ```
-2. Erstelle eine `setup.py`-Datei (siehe Beispielcode im Projekt).
-3. Führe den folgenden Befehl im Projektordner aus:
+2. Create a `setup.py` file (see example code in the project).
+3. Run the following command in the project folder:
    ```bash
    python setup.py py2app
    ```
-4. Die resultierende .app befindet sich im `dist`-Ordner. 📂
+4. The resulting .app will be located in the `dist` folder. 📂
 
-## Projektstruktur 📂
+## Project Structure 📂
 
-- **src/main.py:** Das Hauptprogramm (GUI) mit Optionen für Analyse, Simulation, Beweis, alternative Ansätze und Einstellungen.
-- **src/analysis/analyzer.py:** Enthält die Klasse `CollatzAnalyzer`, die die Collatz-Sequenz generiert, analysiert und visualisiert (einschließlich Zoom-/Schwenkfunktionalität über Matplotlib).
-- **src/proofs/prover.py:** Bietet einfache Beweisfunktionen, um den Hypothesentest durchzuführen (z. B. Überprüfung, ob n == 1).
-- **setup.py:** Das Verpackungsskript für py2app, um eine macOS-Anwendung zu erstellen.
-- **README.md:** Diese Dokumentation. 📖
+- **src/main.py:** The main program (GUI) with options for analysis, simulation, proof, alternative approaches, and settings.
+- **src/analysis/analyzer.py:** Contains the `CollatzAnalyzer` class, which generates, analyzes, and visualizes the Collatz sequence (including zoom/pan functionality via Matplotlib).
+- **src/proofs/prover.py:** Provides simple proof functions to perform hypothesis tests (e.g., checking if n == 1).
+- **setup.py:** The packaging script for py2app to create a macOS application.
+- **README.md:** This documentation. 📖
 
-## Zusätzliche Hinweise 📝
+## Additional Notes 📝
 
-- Die Übersetzung der Benutzeroberfläche wird als Beispiel bereitgestellt. Für einen vollständigen Sprachwechsel sollten alle UI-Texte dynamisch an die gewählte Sprache angepasst werden. 🌍
-- Die Farbauswahl wird jetzt über einen Farbwähler gehandhabt, sodass keine Hex-Codes manuell eingegeben werden müssen. 🎨
-- Experimentelle Ansätze (wie der alternative Beweis mit sympy) zeigen, wie Python für symbolische Berechnungen verwendet werden kann – auch wenn ein vollständiger mathematischer Beweis fortgeschrittenere Systeme erfordert. 🧠
+- The user interface translation is provided as an example. For a complete language switch, all UI texts should be dynamically adjusted to the selected language. 🌍
+- The color selection is now handled via a color picker, so no manual input of hex codes is required. 🎨
+- Experimental approaches (like the alternative proof with sympy) demonstrate how Python can be used for symbolic computations – even though a complete mathematical proof requires more advanced systems. 🧠
 
-## Zusammenfassung 🏁
+## Summary 🏁
 
-Dieses Repository dient als leichtgewichtige und lehrreiche Plattform, um mit der Collatz-Vermutung zu experimentieren. Es kombiniert Visualisierung, Simulation und anpassbare Schnittstellenfunktionen. Viel Spaß beim Erkunden! 🎉
+This repository serves as a lightweight and educational platform to experiment with the Collatz conjecture. It combines visualization, simulation, and customizable interface features. Have fun exploring! 🎉
