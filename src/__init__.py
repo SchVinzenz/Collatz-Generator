@@ -1,1 +1,1 @@
-# This file is intentionally left blank.
+# Dieses Modul initialisiert das Collatz-Tool-Projekt.

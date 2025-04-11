@@ -1,1 +1,1 @@
-# This file is intentionally left blank.
+# Dieses Modul enthält Funktionen zur Simulation der Collatz-Sequenz.

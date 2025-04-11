@@ -1,1 +1,1 @@
-# This file is intentionally left blank.
+# Dieses Modul enthält Hilfsfunktionen für das Collatz-Tool.
